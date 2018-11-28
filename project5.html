@@ -1,0 +1,118 @@
+<html>
+<head>
+	<title>Web Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav id='navbar'>
+        <a href='#welcome-section'>About</a>
+        <a href='#projects'>Portfolio</a>
+        <a href='#contact'>Contact</a>
+    </nav>
+    <section id='welcome-section'>
+        <div id='container'>
+            <h1>Ian Aranha</h1>
+            <h4>Portfolio of a Web Developer</h4>
+        </div>
+    </section>
+    <div id='projects'>
+        <header>
+        <h2 id='portfolio_header'>These are some of my completed works</h2>
+        </header>
+        <section id='projs'>
+            <div class='project-tile'>
+                <a id='link' href="Project1/Project1.html">Tribute Page</a>
+                <img class='project_image' src='TributePage.png' alt='Tribute Page'>
+            </div>
+            <div class='project-tile'>
+                <a href="Project2/project2.html">Survey Form</a>
+                <img class='project_image' src='SurveyForm.png' alt='Survey Form Page'>
+            </div>
+            <div class='project-tile'>
+                <a href="Project3/project3.html">Landing Page</a>
+                <img class='project_image' src='ProductLandingPage.png' alt='Product Landing Page'>
+            </div>
+            <div class='project-tile'>
+                <a href="Project4/project4.html">Technical Documentaion Page</a>
+                <img class='project_image' src='TechnicalDocumentation.png' alt='Technical Documentation Page'>
+            </div>
+            <div class='project-tile'>
+                <a href="Project6/index.html">Basic PacMan using Javascript</a>
+                <img class='project_image' src='Pacman.png' alt='Pacman Page'>
+            </div>
+            <div class='project-tile'>
+                <a>Pending....</a>
+            </div>    	
+            <div class='project-tile'>
+                <a>Pending....</a>
+            </div>
+        </section>
+    </div>
+    <section id='contact'>
+        <header id='header'>
+            <h2>Contact me!</h2>
+        </header>
+        <div id='grid_container'>
+            <div class=grid_item>
+                <a href='https://www.linkedin.com/in/ianaranha/' target="_blank" class='contact-details'>LinkedIn</a>
+                <img class='contact-image' src="Logo-2CRev-48px-R.png" alt="LinkedIn Logo">
+            </div>
+            <div class=grid_item>
+                <a id='profile-link' href='https://github.com/IanAranha' target="_blank" class='contact-details'>GitHub</a>
+                <img class='contact-image' src="Github.png" alt="Github Logo">
+            </div>
+            <div class=grid_item>
+                <a href='https://twitter.com/ianaranha' target="_blank" class='contact-details'>Twitter</a>
+                <img class='contact-image' src="TwitterLogo.png" alt="Twitter Logo">
+            </div>
+            <div class=grid_item>
+                <a href='mailto:totallydeaf@yahoo.com' class='contact-details'>Email</a>
+                <img class='contact-image' src="Email.png" alt="Email Logo">
+                
+            </div>
+            <div class=grid_item>
+                <a class='contact-details' style="text-decoration: underline">Click for Phone </a>
+                <img class='contact-image' src="Phone.png" alt="Phone Logo">
+                <button id="myBtn">Click for phone</button>
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Ian's Phone number</p>
+                        <p>206 420 0209</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+        </div>
+    </section>
+ <span>Created as part of FreeCode Online Web Development course.</span>
+ </body>
+</html>
